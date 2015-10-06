@@ -1,5 +1,7 @@
 var gulp = require('gulp');
 var less = require('gulp-less');
+var browserify = require('gulp-browserify');
+var rename = require('gulp-rename');
 var path = require('path');
 
 var source = {
@@ -7,10 +9,10 @@ var source = {
     'public/**/*.html'
   ],
   styles: [
-    'public/css/**/*.less'
+    'public/stylesheets/**/*.less'
   ],
   scripts: [
-    'public/js/**/*.js'
+    'public/scripts/**/*.js'
   ],
   test: [
     'test/**/*.js'
@@ -18,8 +20,8 @@ var source = {
 };
 
 var destination = {
-  style: 'public/css',
-  script: 'public/js'
+  style: 'public/static/css',
+  script: 'public/static/js'
 };
 
 gulp.task('less', function() {
@@ -28,5 +30,11 @@ gulp.task('less', function() {
     .pipe(gulp.dest(destination.style));
 });
 
+gulp.task('scripts', function() {
+  return gulp.src(source.scripts)
+    .pipe(browserify({insertGlobals: true, debug: true,}))
+    .pipe(gulp.dest(destination.script))
+});
 
-gulp.task('default', ['less']); //development
+
+gulp.task('default', ['less', 'scripts']); //development

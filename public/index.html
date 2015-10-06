@@ -1,26 +1,29 @@
-<html>
+<!DOCTYPE html>
+<html ng-app="gods">
 
 <head>
-  <title>gods</title>
-  <link type="text/css" href="css/styles.css"/>
-  <script type="text/javascript" src="js/application.js"></script>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>gods | Front end example project for bootstrapping a new project</title>
+  <meta name="fragment" content="!">
+  <meta name="description" content="Description for search engines to capture this text for SEO purposes">
+
+  <!-- Generated files -->
+  <link type="text/css" rel="stylesheet" href="static/css/styles.css"/>
+  <script type="text/javascript" src="static/js/application.js"></script>
 </head>
 
 <body>
 
-<header>
-
-</header>
+<header ng-include="views/templates/header"></header>
 
 <div class="content">
   Hi Adam
 </div>
 
-<footer>
-
-</footer>
+<footer ng-include="views/templates/footer"></footer>
 
 </body>
-
 
 </html>

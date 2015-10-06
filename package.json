@@ -9,7 +9,9 @@
   },
   "devDependencies": {
     "gulp": "^3.9.0",
-    "gulp-less": "^3.0.3"
+    "gulp-browserify": "^0.5.1",
+    "gulp-less": "^3.0.3",
+    "gulp-rename": "^1.2.2"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
