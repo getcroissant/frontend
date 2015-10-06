@@ -20,8 +20,8 @@ var source = {
 };
 
 var destination = {
-  style: 'public/static/css',
-  script: 'public/static/js'
+  style: 'public/static',
+  script: 'public/static'
 };
 
 gulp.task('less', function() {
