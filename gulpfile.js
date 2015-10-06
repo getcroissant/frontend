@@ -1,7 +1,6 @@
 var gulp = require('gulp');
 var less = require('gulp-less');
 var browserify = require('gulp-browserify');
-var rename = require('gulp-rename');
 var path = require('path');
 
 var source = {
@@ -9,10 +8,10 @@ var source = {
     'public/**/*.html'
   ],
   styles: [
-    'public/stylesheets/**/*.less'
+    'public/stylesheets/styles.less'
   ],
   scripts: [
-    'public/scripts/**/*.js'
+    'public/scripts/application.js'
   ],
   test: [
     'test/**/*.js'

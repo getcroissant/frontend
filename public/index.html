@@ -16,13 +16,11 @@
 
 <body>
 
-<header ng-include="views/templates/header"></header>
+<header ng-include="'views/templates/header.html'"></header>
 
-<div class="content">
-  Hi Adam
-</div>
+<div class="content" ng-view></div>
 
-<footer ng-include="views/templates/footer"></footer>
+<footer ng-include="'views/templates/footer.html'"></footer>
 
 </body>
 
