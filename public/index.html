@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html ng-app="gods">
+<html ng-app="website">
 
 <head>
+  <base href="/">
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>gods | Front end example project for bootstrapping a new project</title>
+  <title>Lens | Truth of everyone</title>
   <meta name="fragment" content="!">
-  <meta name="description" content="Description for search engines to capture this text for SEO purposes">
+  <meta name="description" content="Truth of everyone">
 
   <!-- Generated files -->
   <link type="text/css" rel="stylesheet" href="static/styles.css"/>
@@ -16,11 +17,13 @@
 
 <body>
 
-<header ng-include="'views/templates/header.html'"></header>
+<div class="wrapper">
+  <header ng-include="'views/templates/header.html'"></header>
 
-<div class="content" ng-view></div>
+  <div class="view" ng-view></div>
 
-<footer ng-include="'views/templates/footer.html'"></footer>
+  <footer ng-include="'views/templates/footer.html'"></footer>
+</div>
 
 </body>
 

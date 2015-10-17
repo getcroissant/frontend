@@ -1,0 +1,33 @@
+.kit {
+
+  .top-fold {
+    height: 320px;
+    background-size: cover;
+    background-position-y: 50%;
+    color: white;
+
+    @media (max-width: @tablet) {
+      height: 300px;
+    }
+
+    @media (max-width: @mobile) {
+      height: 240px;
+    }
+
+    .overlay {
+      width: 100%;
+      height: 100%;
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .title {
+      padding: 10% 0;
+    }
+  }
+
+  .product {
+    border-top: 1px solid @gray;
+  }
+
+
+}

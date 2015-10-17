@@ -2,7 +2,11 @@ var express = require('express');
 var app = express();
 
 app.use(express.static('public'));
-app.use(express.static('node_modules'));
+
+//Redirect for front end routes
+app.get('*', function(req, res) {
+  return res.redirect('/#!' + req.originalUrl);
+});
 
 var server = app.listen(3000, function() {
   var host = server.address().address;

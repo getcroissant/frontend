@@ -9,8 +9,9 @@ module.exports = function($http) {
       return $http.post('/api/auth/logout', {});
     },
 
-    getUserInfo: function(email, password) {
+    getUserInfo: function() {
       return $http.get('/api/auth/userinfo');
     }
   }
+
 };
