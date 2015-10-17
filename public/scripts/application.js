@@ -23,8 +23,7 @@ app.controller('HeaderController', require('./controllers/headerController'));
 app.controller('FooterController', require('./controllers/footerController'));
 app.controller('LoginController', require('./controllers/loginController'));
 app.controller('SplashController', require('./controllers/splashController'));
-app.controller('ProductController', require('./controllers/productController'));
-app.controller('KitController', require('./controllers/kitController'));
+app.controller('EmailController', require('./controllers/emailController'));
 
 //Configurations
 app.config(function($locationProvider, $routeProvider) {
