@@ -16,8 +16,7 @@ app.directive('confirmClick', require('./directives/confirmClick'));
 
 //Factories
 app.factory('Authentication', require('./factories/authentication'));
-app.factory('Product', require('./factories/product'));
-app.factory('Kit', require('./factories/kit'));
+app.factory('Email', require('./factories/email'));
 
 //Controller
 app.controller('HeaderController', require('./controllers/headerController'));

@@ -1,4 +1,4 @@
-module.exports = function($scope, $http, $routeParams, Kit) {
+module.exports = function($scope, $http, $routeParams, Email) {
 
   var id = $routeParams.id;
 
