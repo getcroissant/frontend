@@ -114,4 +114,4 @@ gulp.task('watch', function() {
 });
 
 gulp.task('default', ['fonts', 'images', 'css', 'scripts', 'watch']); //development
-gulp.task('build', ['fonts', 'minify-css', 'minify-js']); //production
+gulp.task('build', ['fonts', 'images', 'minify-css', 'minify-js']); //production
