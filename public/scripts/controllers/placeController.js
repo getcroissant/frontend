@@ -16,7 +16,13 @@ module.exports = function($scope, $http, $routeParams, Place) {
         description: 'Fish cake with a circular design.',
         amount: 2.00
       }
-    ]
+    ],
+    duration: 500000000,
+    price: {
+      amount: 40,
+      currency: '$'
+    }
+
   };
 
   console.log('Place loaded: ' + id);

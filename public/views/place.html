@@ -46,14 +46,14 @@
         <div class="row">
           <div class="col-xs-6">
             <div class="text-center">
-              <h3>2 days</h3>
+              <h3>{{place.duration | humanize}}</h3>
               <h5>DURATION</h5>
             </div>
           </div>
 
           <div class="col-xs-6">
             <div class="text-center">
-              <h3>$8.00</h3>
+              <h3>{{place.price.amount | currency: place.price.currency}}</h3>
               <h5>COST</h5>
             </div>
           </div>

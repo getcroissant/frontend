@@ -17,9 +17,11 @@ var app = angular.module('website', [angularRoute, angularCookies]);
 //Directives
 app.directive('confirmClick', require('./directives/confirmClick'));
 
+//Filters
+app.filter('humanize', require('./filters/humanize'));
+
 //Factories
 app.factory('Authentication', require('./factories/authentication'));
-app.factory('Email', require('./factories/email'));
 app.factory('Place', require('./factories/place'));
 
 //Controller
@@ -27,7 +29,6 @@ app.controller('HeaderController', require('./controllers/headerController'));
 app.controller('FooterController', require('./controllers/footerController'));
 app.controller('LoginController', require('./controllers/loginController'));
 app.controller('SplashController', require('./controllers/splashController'));
-app.controller('EmailController', require('./controllers/emailController'));
 app.controller('PlaceController', require('./controllers/placeController'));
 
 //Configurations
