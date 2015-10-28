@@ -8,7 +8,9 @@ app.get('*', function(req, res) {
   return res.redirect('/#!' + req.originalUrl);
 });
 
-var server = app.listen(80, function() {
+var port = process.env.PORT || 3000;
+
+var server = app.listen(port, function() {
   var host = server.address().address;
   var port = server.address().port;
 
