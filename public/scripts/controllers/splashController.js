@@ -1,12 +1,11 @@
 $ = require('jquery');
 
-module.exports = function($scope, $http, $location, Product) {
+module.exports = function($scope, $http, $location) {
 
   $scope.search = '';
 
   $scope.find = function() {
     console.log('Finding ' + $scope.search);
-
     $location.path('/' + $scope.search)
   };
 
