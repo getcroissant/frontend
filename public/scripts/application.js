@@ -17,6 +17,7 @@ app.directive('confirmClick', require('./directives/confirmClick'));
 //Factories
 app.factory('Authentication', require('./factories/authentication'));
 app.factory('Email', require('./factories/email'));
+app.factory('Place', require('./factories/place'));
 
 //Controller
 app.controller('HeaderController', require('./controllers/headerController'));
@@ -24,6 +25,7 @@ app.controller('FooterController', require('./controllers/footerController'));
 app.controller('LoginController', require('./controllers/loginController'));
 app.controller('SplashController', require('./controllers/splashController'));
 app.controller('EmailController', require('./controllers/emailController'));
+app.controller('PlaceController', require('./controllers/placeController'));
 
 //Configurations
 app.config(function($locationProvider, $routeProvider) {
@@ -37,8 +39,8 @@ app.config(function($locationProvider, $routeProvider) {
     templateUrl: 'views/privacy.html'
   }).when('/tos', {
     templateUrl: 'views/tos.html'
-  }).when('/:id', {
-    templateUrl: 'views/email.html'
+  }).when('/place/:id', {
+    templateUrl: 'views/place.html'
   }).otherwise({
     templateUrl: 'views/404.html'
   });

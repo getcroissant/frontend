@@ -1,0 +1,48 @@
+<div class="place" ng-controller="PlaceController">
+
+  <!-- Kit -->
+  <div class="top-fold" style="background-image: url('../static/images/splash/fold.png')">
+    <div class="overlay">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-16">
+            <div class="title text-center">
+              <h1 class="name">{{place.name}}</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <!-- Description & Products -->
+      <div class="col-xs-12 col-sm-8">
+        <br>
+
+        <p>{{place.description}}</p>
+
+        <div class="product" ng-repeat="product in place.products">
+          <h3>{{product.name}}</h3>
+
+          <p>{{product.description}}</p>
+        </div>
+
+      </div>
+
+      <div class="col-xs-12 col-sm-4">
+        <br>
+
+        <div class="price">
+          <h4>Total amount: $8.00</h4>
+        </div>
+
+        <button class="btn btn-block btn-blue">Buy</button>
+
+      </div>
+    </div>
+  </div>
+
+
+</div>
