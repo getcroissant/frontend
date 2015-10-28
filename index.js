@@ -1,7 +1,7 @@
 var express = require('express');
 var app = express();
 
-app.use(express.static('public'));
+app.use(express.static(__dirname + '/public'));
 
 //Redirect for front end routes
 app.get('*', function(req, res) {
