@@ -39,6 +39,8 @@ app.config(function($locationProvider, $routeProvider) {
     templateUrl: 'views/privacy.html'
   }).when('/tos', {
     templateUrl: 'views/tos.html'
+  }).when('/about', {
+    templateUrl: 'views/about.html'
   }).when('/place/:id', {
     templateUrl: 'views/place.html'
   }).otherwise({
