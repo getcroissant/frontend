@@ -1,0 +1,63 @@
+<div class="place" ng-controller="DiscoverController">
+
+  <div class="container">
+    <div class="row">
+      <!-- Description & Products -->
+      <div class="col-xs-12 col-sm-8">
+        <br>
+
+        <div class="description">
+          <p>{{place.description}}</p>
+        </div>
+
+        <hr>
+
+        <div class="product" ng-repeat="product in place.products">
+          <h3>{{product.name}}</h3>
+
+          <p>{{product.description}}</p>
+        </div>
+
+      </div>
+
+      <div class="col-xs-12 col-sm-4">
+        <div class="row">
+          <div class="col-xs-6">
+            <div class="text-center">
+              <h3>{{place.duration | humanize}}</h3>
+              <h5>DURATION</h5>
+            </div>
+          </div>
+
+          <div class="col-xs-6">
+            <div class="text-center">
+              <h3>{{place.price.amount | currency: place.price.currency}}</h3>
+              <h5>COST</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-xs-12">
+            <button class="btn btn-block btn-blue">Add to travel</button>
+          </div>
+        </div>
+
+        <br>
+
+        <div class="row">
+          <div class="col-xs-6">
+            <img class="img-responsive" src="../static/images/splash/fold.png">
+          </div>
+          <div class="col-xs-6">
+            <img class="img-responsive" src="../static/images/splash/fold.png">
+          </div>
+        </div>
+
+        <br>
+      </div>
+    </div>
+  </div>
+
+
+</div>

@@ -29,6 +29,7 @@ app.controller('HeaderController', require('./controllers/headerController'));
 app.controller('FooterController', require('./controllers/footerController'));
 app.controller('LoginController', require('./controllers/loginController'));
 app.controller('SplashController', require('./controllers/splashController'));
+app.controller('DiscoverController', require('./controllers/discoverController'));
 app.controller('PlaceController', require('./controllers/placeController'));
 
 //Configurations
@@ -48,6 +49,8 @@ app.config(function($locationProvider, $routeProvider) {
     templateUrl: 'views/tos.html'
   }).when('/about', {
     templateUrl: 'views/about.html'
+  }).when('/discover', {
+    templateUrl: 'views/discover.html'
   }).when('/place/:id', {
     templateUrl: 'views/place.html'
   }).otherwise({
