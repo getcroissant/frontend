@@ -3,12 +3,19 @@
   <!-- Kit -->
   <div class="top-fold" style="background-image: url('../static/images/splash/fold.png')">
     <div class="overlay">
-      <div class="container">
+      <div class="container-fluid">
         <div class="row">
           <div class="col-xs-16">
             <div class="title text-center">
               <h1 class="name">{{place.name}}</h1>
             </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-16">
+            <ul class="list-inline">
+              <li><a href=""><span class="fa fa-heart"></span></a></li>
+            </ul>
           </div>
         </div>
       </div>
@@ -21,7 +28,11 @@
       <div class="col-xs-12 col-sm-8">
         <br>
 
-        <p>{{place.description}}</p>
+        <div class="description">
+          <p>{{place.description}}</p>
+        </div>
+
+        <hr>
 
         <div class="product" ng-repeat="product in place.products">
           <h3>{{product.name}}</h3>
@@ -32,14 +43,40 @@
       </div>
 
       <div class="col-xs-12 col-sm-4">
-        <br>
+        <div class="row">
+          <div class="col-xs-6">
+            <div class="text-center">
+              <h3>2 days</h3>
+              <h5>DURATION</h5>
+            </div>
+          </div>
 
-        <div class="price">
-          <h4>Total amount: $8.00</h4>
+          <div class="col-xs-6">
+            <div class="text-center">
+              <h3>$8.00</h3>
+              <h5>COST</h5>
+            </div>
+          </div>
         </div>
 
-        <button class="btn btn-block btn-blue">Buy</button>
+        <div class="row">
+          <div class="col-xs-12">
+            <button class="btn btn-block btn-blue">Add to travel</button>
+          </div>
+        </div>
 
+        <br>
+
+        <div class="row">
+          <div class="col-xs-6">
+            <img class="img-responsive" src="../static/images/splash/fold.png">
+          </div>
+          <div class="col-xs-6">
+            <img class="img-responsive" src="../static/images/splash/fold.png">
+          </div>
+        </div>
+
+        <br>
       </div>
     </div>
   </div>
