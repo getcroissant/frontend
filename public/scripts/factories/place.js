@@ -1,16 +1,16 @@
 module.exports = function($http) {
   return {
 
-    createKit: function(name, description, products) {
-      return $http.post('/api/kit', {name: name, description: description, products: products});
+    createPlace: function(name, description) {
+      return $http.post('/api/place', {name: name, description: description});
     },
 
     getById: function(id) {
-      return $http.get('/api/kit/' + id);
+      return $http.get('/api/place/' + id);
     },
 
-    getKits: function() {
-      return $http.get('/api/kit');
+    getPlaces: function() {
+      return $http.get('/api/place');
     }
 
   }

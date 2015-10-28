@@ -1,11 +1,14 @@
+//Global elements the needs to be loaded once
 global.jQuery = require('jquery');
 global.bootstrap = require('bootstrap');
 global.slickCarousel = require('slick-carousel');
 
+//Angular dependencies
 var angular = require('angular');
 var angularRoute = require('angular-route');
 var angularCookies = require('angular-cookies');
 
+//Utilities
 var moment = require('moment');
 var _ = require('underscore');
 
@@ -29,8 +32,11 @@ app.controller('PlaceController', require('./controllers/placeController'));
 
 //Configurations
 app.config(function($locationProvider, $routeProvider) {
+
+  //Hashbang for Google SEO
   $locationProvider.html5Mode(true).hashPrefix('!');
 
+  //Routes
   $routeProvider.when('/', {
     templateUrl: 'views/splash.html'
   }).when('/login', {

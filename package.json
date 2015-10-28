@@ -1,7 +1,7 @@
 {
-  "name": "gods",
+  "name": "croissant",
   "version": "1.0.0",
-  "description": "",
+  "description": "website",
   "main": "index.js",
   "dependencies": {
     "angular": "^1.4.7",
