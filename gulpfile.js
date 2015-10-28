@@ -36,9 +36,14 @@ var source = {
   ],
 
   fonts: [
+    'public/fonts/**/*',
     'node_modules/bootstrap/fonts/*',
     'node_modules/font-awesome/fonts/*',
     'node_modules/slick-carousel/slick/fonts/*'
+  ],
+
+  images: [
+    'public/images/**/*'
   ],
 
   test: [
@@ -51,7 +56,8 @@ var destination = {
   less: 'public/static/',
   sass: 'public/static/',
   script: 'public/static',
-  fonts: 'public/static/fonts'
+  fonts: 'public/static/fonts',
+  images: 'public/static/images'
 };
 
 gulp.task('less', function() {
@@ -97,10 +103,15 @@ gulp.task('fonts', function() {
     .pipe(gulp.dest(destination.fonts));
 });
 
+gulp.task('images', function() {
+  return gulp.src(source.images)
+    .pipe(gulp.dest(destination.images));
+});
+
 gulp.task('watch', function() {
   gulp.watch('public/stylesheets/**/*', ['css']);
   gulp.watch('public/scripts/**/*.js', ['scripts']);
 });
 
-gulp.task('default', ['fonts', 'css', 'scripts', 'watch']); //development
+gulp.task('default', ['fonts', 'images', 'css', 'scripts', 'watch']); //development
 gulp.task('build', ['fonts', 'minify-css', 'minify-js']); //production
