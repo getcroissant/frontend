@@ -1,7 +1,7 @@
 {
   "name": "croissant",
   "version": "1.0.0",
-  "description": "website",
+  "description": "Bootstrap front end web application",
   "main": "index.js",
   "dependencies": {
     "angular": "^1.4.7",
@@ -32,12 +32,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/adamkchew/gods.git"
+    "url": "git+https://github.com/getcroissant/frontend.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/adamkchew/gods/issues"
+    "url": "https://github.com/getcroissant/frontend/issues"
   },
-  "homepage": "https://github.com/adamkchew/gods#readme"
+  "homepage": "https://github.com/getcroissant/frontend#readme"
 }
