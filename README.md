@@ -1,6 +1,6 @@
-# bootstrap website
+# Bootstrap front end
 
-> Frontend application
+> Frontend application that contains all of the tools needed to build a successful [website](https://croissant-frontend.herokuapp.com/).
 
 ## Install Dependencies:
 
