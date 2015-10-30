@@ -1,6 +1,6 @@
-# Bootstrap front end
+# Front end
 
-> Frontend application that contains all of the tools needed to build a successful [website](https://croissant-frontend.herokuapp.com/).
+> Node web application containing a skeleton of tools necessary to build a [website](https://croissant-frontend.herokuapp.com/). This contains
 
 ## Install Dependencies:
 
