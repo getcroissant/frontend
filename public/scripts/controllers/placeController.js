@@ -16,6 +16,16 @@ module.exports = function($scope, $http, $routeParams, Place) {
         name: "Hiking shoes",
         icon: "hiking-shoes",
         description: "Hiking shoes are mandatory because this is going to be a tenuous hike"
+      },
+      {
+        name: "Map",
+        icon: "map",
+        description: "Map is required"
+      },
+      {
+        name: "Tent",
+        icon: "tent",
+        description: "Setting up a tent at night is required"
       }
     ],
     amenities: [
