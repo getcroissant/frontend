@@ -12,9 +12,10 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-xs-10 col-xs-offset-1">
+          <div class="col-xs-12 ">
             <ul class="list-inline pull-right">
-              <li><a href=""><span class="fa fa-heart white"></span></a></li>
+              <li><a href=""><span class="fa fa-heart action-icon"></span></a></li>
+              <li><a href=""><span class="fa fa-share action-icon"></span></a></li>
             </ul>
           </div>
         </div>
@@ -33,6 +34,17 @@
         </div>
 
         <hr>
+
+        <div class="row">
+          <div class="requirement" ng-repeat="requirement in place.requirements">
+            <div class="col-xs-3">
+              <div class="text-center">
+                <h3><span class="fa fa-{{requirement.icon}}"></span></h3>
+                <h5>{{requirement.name}}</h5>
+              </div>
+            </div>
+          </div>
+        </div>
 
         <div class="amenity" ng-repeat="amenity in place.amenities">
           <h3>{{amenity.name}}</h3>
@@ -77,9 +89,26 @@
         </div>
 
         <br>
+
+        <div class="row">
+          <div class="col-xs-12">
+            <img class="img-responsive" src="../static/images/default.png">
+          </div>
+        </div>
+
+        <br>
+
+        <div class="row">
+          <div class="col-xs-6">
+            <img class="img-responsive" src="../static/images/default.png">
+          </div>
+          <div class="col-xs-6">
+            <img class="img-responsive" src="../static/images/default.png">
+          </div>
+        </div>
+
+        <br>
       </div>
     </div>
   </div>
-
-
 </div>
