@@ -53,6 +53,8 @@ app.config(function($locationProvider, $routeProvider) {
     templateUrl: 'views/discover.html'
   }).when('/place/:id', {
     templateUrl: 'views/place.html'
+  }).when('/profile/:id', {
+    templateUrl: 'views/profile.html'
   }).otherwise({
     templateUrl: 'views/404.html'
   });

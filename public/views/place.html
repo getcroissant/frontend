@@ -1,9 +1,10 @@
 <div class="place" ng-controller="PlaceController">
 
-  <!-- Kit -->
+  <!-- Place -->
   <div class="top-fold" style="background-image: url('../static/images/default.png')">
     <div class="overlay">
       <div class="container-fluid">
+        <!-- Hero image-->
         <div class="row">
           <div class="col-xs-16">
             <div class="title text-center">
@@ -11,12 +12,23 @@
             </div>
           </div>
         </div>
+
         <div class="row">
-          <div class="col-xs-12 ">
+          <div class="col-xs-12">
+            <div class="pull-left">
+              <a href="/profile/john.smith">
+                <img class="img-rounded" src="../static/images/default.png" width="50px">
+              </a>
+              &nbsp;
+              <a href="/profile/john.smith">
+                <span class="h4 white">John Smith</span>
+              </a>
+            </div>
             <ul class="list-inline pull-right">
               <li><a href=""><span class="fa fa-heart fa-2x action-icon"></span></a></li>
               <li><a href=""><span class="fa fa-share fa-2x action-icon"></span></a></li>
             </ul>
+            <div class="clearfix"></div>
           </div>
         </div>
       </div>
