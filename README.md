@@ -1,6 +1,8 @@
 # Front end
 
-> Node web application containing a skeleton of tools necessary to build a [website](https://croissant-frontend.herokuapp.com/). This contains
+Node web application containing a skeleton of tools necessary to build a [website](https://croissant-frontend.herokuapp.com/).
+This project will demonstrate how to load node modules in the front end with [browserify](http://browserify.org/).
+We're using [bootstrap]() and [Angular JS]() will be our template engine along with additional components such as a carousel ([Slick]()) and a gallery box ([Photoswipe]())
 
 ## Install Dependencies:
 
