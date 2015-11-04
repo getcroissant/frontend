@@ -2,7 +2,8 @@
 
 Node web application containing a skeleton of tools necessary to build a [website](https://croissant-frontend.herokuapp.com/).
 This project will demonstrate how to load node modules in the front end with [browserify](http://browserify.org/).
-We're using [bootstrap]() and [Angular JS]() will be our template engine along with additional components such as a carousel ([Slick]()) and a gallery box ([Photoswipe]())
+We're using [bootstrap](getbootstrap.com) and [Angular JS](https://angularjs.org) will be our template engine along with additional
+components such as a carousel ([Slick](http://kenwheeler.github.io/slick/)) and a gallery box ([Photoswipe](http://photoswipe.com/))
 
 ## Install Dependencies:
 
