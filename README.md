@@ -2,30 +2,30 @@
 
 Node web application containing a skeleton of tools necessary to build a [website](https://croissant-frontend.herokuapp.com/).
 This project will demonstrate how to load node modules in the front end with [browserify](http://browserify.org/).
-We're using [bootstrap](getbootstrap.com) and [Angular JS](https://angularjs.org) will be our template engine along with additional
+We're using [bootstrap](http://getbootstrap.com/) and [Angular JS](https://angularjs.org) will be our template engine along with additional
 components such as a carousel ([Slick](http://kenwheeler.github.io/slick/)) and a gallery box ([Photoswipe](http://photoswipe.com/))
 
 ## Install Dependencies:
 
-Dependencies required on the operating system [http://brew.sh/] to install brew
+Dependencies required on the operating system to install [npm](https://www.npmjs.com/) via [brew](http://brew.sh/)
 ```
 brew install npm
 ```
 
-Dependencies required for the application [https://www.npmjs.com/] to install npm
+Dependencies required for the node to install project dependency
 ```
 npm install
 ```
 
 ## Prerequisite
 
-Run gulp to compile sass, minify javascript, cache markup language.
+Run [gulp](http://gulpjs.com/) to compile less, sass, css, javascript and compressing resources.
 ```
 npm install -g gulp
 gulp
 ```
 
-Run nodemon to have the server restart after a file change.
+Run [nodemon](http://nodemon.io/) to have the server restart after a file change.
 ```
 npm install -g nodemon
 nodemon
