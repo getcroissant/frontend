@@ -1,7 +1,6 @@
 //Global elements the needs to be loaded once
 global.jQuery = require('jquery');
 global.bootstrap = require('bootstrap');
-global.slickCarousel = require('slick-carousel');
 
 //Angular dependencies
 var angular = require('angular');

@@ -1,4 +1,5 @@
-$ = require('jquery');
+var $ = require('jquery');
+var slick = require('slick-carousel');
 
 module.exports = function($scope, $http, $location) {
 
