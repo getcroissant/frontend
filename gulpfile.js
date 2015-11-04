@@ -39,7 +39,8 @@ var source = {
     'public/fonts/**/*',
     'node_modules/bootstrap/fonts/*',
     'node_modules/font-awesome/fonts/*',
-    'node_modules/slick-carousel/slick/fonts/*'
+    'node_modules/slick-carousel/slick/fonts/*',
+    'node_modules/photoswipe/src/css/default-skin/**/*.+(svg|gif)'
   ],
 
   images: [

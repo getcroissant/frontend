@@ -1,5 +1,6 @@
-$image-url: "./static/images/";
-$font-path: "./static/fonts/";
+$image-url: "./images/";
+$font-path: "./fonts/";
+$pswp__assets-path: "./fonts/";
 
 @function image-url($url) {
   @return $image-url + $url;
