@@ -22,6 +22,7 @@ app.filter('humanize', require('./filters/humanize'));
 //Factories
 app.factory('Authentication', require('./factories/authentication'));
 app.factory('Place', require('./factories/place'));
+app.factory('Profile', require('./factories/profile'));
 
 //Controller
 app.controller('HeaderController', require('./controllers/headerController'));
@@ -30,6 +31,7 @@ app.controller('LoginController', require('./controllers/loginController'));
 app.controller('SplashController', require('./controllers/splashController'));
 app.controller('DiscoverController', require('./controllers/discoverController'));
 app.controller('PlaceController', require('./controllers/placeController'));
+app.controller('ProfileController', require('./controllers/profileController'));
 
 //Configurations
 app.config(function($locationProvider, $routeProvider) {
